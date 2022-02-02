@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
@@ -68,6 +68,14 @@ a {
 
 .mar-right-auto {
   margin-right: auto;
+}
+
+.mar-right-0-5 {
+  margin-right: 0.5rem;
+}
+
+.mar-left-0-5 {
+  margin-left: 0.5rem;
 }
 
 /* padding property css */
