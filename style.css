@@ -1,3 +1,6 @@
+@import "./Components/Alert/alert.css";
+@import "./Components/Button/button.css";
+
 * {
   margin: 0;
   font-family: "Poppins", sans-serif;
