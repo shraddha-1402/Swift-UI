@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <script defer src="../component.js"></script>
+  <link rel="stylesheet" href="./badge.css">
+  <title>Badge</title>
+</head>
+
+<body>
+  <div class="mar-1 flex-col align-baseline gap-2">
+    <p class="pos-rel">
+      Text with a badge
+      <span class="badge pos-abs sm-badge sm-txt-badge">4</span>
+    </p>
+
+    <p class="pos-rel">
+      Text with a large badge
+      <span class="badge pos-abs lg-badge lg-txt-badge">4</span>
+    </p>
+
+    <p class="pos-rel lg-text">
+      Large text with a large badge
+      <span class="badge pos-abs lg-badge lg-txt-badge">4</span>
+    </p>
+
+    <button class="pos-rel btn">
+      <span class="badge pos-abs sm-badge btn-left-badge">8</span>
+      Action
+    </button>
+
+    <button id="toggle-btn" class="pos-rel btn">
+      Hide
+      <span class="badge pos-abs sm-badge btn-right-badge">8</span>
+    </button>
+
+    <i class="far fa-comment pos-rel icon-size">
+      <span class="badge pos-abs sm-badge icon-badge">10</span>
+    </i>
+
+    <i class="fas fa-shopping-cart pos-rel icon-size">
+      <span class="badge pos-abs sm-badge icon-badge">10</span>
+    </i>
+
+    <i class="far fa-envelope pos-rel icon-size">
+      <span class="badge pos-abs sm-badge icon-badge">10</span>
+    </i>
+
+    <figure class="pos-rel">
+      <img class=" lg-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
+      <div class="avatar-badge pos-abs lg-avatar-badge online"></div>
+    </figure>
+
+    <figure class="pos-rel">
+      <img class=" md-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
+      <div class="avatar-badge pos-abs md-avatar-badge offline"></div>
+    </figure>
+
+    <figure class="pos-rel">
+      <img class=" sm-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
+      <div class="avatar-badge pos-abs sm-avatar-badge dnd"></div>
+    </figure>
+
+    <figure class="pos-rel">
+      <img class=" lg-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
+      <div class="avatar-badge pos-abs lg-avatar-badge fas fa-exclamation-circle"></div>
+    </figure>
+
+  </div>
+
+</body>
+
+</html>

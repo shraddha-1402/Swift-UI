@@ -1,0 +1,89 @@
+@import "../../style.css";
+
+.badge {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sm-badge {
+  width: 1.35rem;
+  height: 1.35rem;
+  line-height: 1.35rem;
+  font-size: 0.8rem;
+}
+
+.lg-badge {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.sm-txt-badge {
+  top: -10px;
+}
+
+.lg-txt-badge {
+  top: -16px;
+}
+
+.btn-left-badge {
+  top: -10px;
+  left: -7px;
+}
+
+.btn-right-badge {
+  top: -12px;
+  right: -10px;
+}
+
+.icon-size {
+  font-size: 2rem;
+}
+
+.icon-badge {
+  top: -10px;
+  left: 18px;
+}
+
+.avatar-badge {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.lg-avatar-badge {
+  width: 1rem;
+  height: 1rem;
+  bottom: 6px;
+  left: 80px;
+}
+
+.md-avatar-badge {
+  width: 0.8rem;
+  height: 0.8rem;
+  bottom: 5px;
+  left: 55px;
+}
+
+.sm-avatar-badge {
+  width: 0.6rem;
+  height: 0.6rem;
+  bottom: 2px;
+  left: 30px;
+}
+
+.dnd {
+  background-color: var(--red);
+}
+
+.offline {
+  background-color: var(--gray);
+}
+
+.online {
+  background-color: var(--green);
+}
