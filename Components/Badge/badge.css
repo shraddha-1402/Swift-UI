@@ -77,13 +77,13 @@
 }
 
 .dnd {
-  background-color: red;
+  background-color: var(--red);
 }
 
 .offline {
-  background-color: gray;
+  background-color: var(--gray);
 }
 
 .online {
-  background-color: green;
+  background-color: var(--green);
 }
