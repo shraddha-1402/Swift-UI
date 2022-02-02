@@ -1,0 +1,40 @@
+@import "../../style.css";
+
+.alert {
+  max-width: 20rem;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem auto;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.simple-alert {
+  color: var(--black);
+  background-color: var(--secondary-color);
+  border-color: var(--black);
+}
+
+.success-alert {
+  color: var(--green);
+  background-color: var(--light-green);
+  border-color: var(--green);
+}
+
+.danger-alert {
+  color: var(--red);
+  background-color: var(--light-red);
+  border-color: var(--red);
+}
+
+.warning-alert {
+  color: var(--yellow);
+  background-color: var(--light-yellow);
+  border-color: var(--yellow);
+}
+
+.info-alert {
+  color: var(--blue);
+  background-color: var(--light-blue);
+  border-color: var(--blue);
+}
