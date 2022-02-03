@@ -4,6 +4,8 @@
 @import "./Components/Button/button.css";
 @import "./Components/Avatar/avatar.css";
 @import "./Components/Badge/badge.css";
+@import "./Components/Image/image.css";
+@import "./Components/Input/input.css";
 
 * {
   margin: 0;
