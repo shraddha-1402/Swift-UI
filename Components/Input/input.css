@@ -1,0 +1,52 @@
+@import "../../style.css";
+
+.input {
+  outline: none;
+  max-width: 20rem;
+  padding: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.25rem;
+}
+
+.input-label {
+  top: -9px;
+  left: 5px;
+  padding: 0 0.15rem;
+  background-color: white;
+}
+
+.std-input {
+  border-color: var(--black);
+}
+
+.std-disabled-input {
+  border-color: var(--gray);
+}
+
+.error-input {
+  border-color: var(--red);
+}
+
+.error-label,
+.error-msg {
+  color: var(--red);
+}
+
+.warning-input {
+  border-color: var(--yellow);
+}
+
+.warning-label,
+.warning-msg {
+  color: var(--yellow);
+}
+
+.success-input {
+  border-color: var(--green);
+}
+
+.success-label,
+.success-msg {
+  color: var(--green);
+}
