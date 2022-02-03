@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./input.css">
+  <title>Input</title>
+</head>
+
+<body>
+  <div class="mar-1 pos-rel">
+    <label for="standard-input" class="input-label pos-abs">Name</label>
+    <input type="text" class="input std-input" />
+  </div>
+
+  <div class="mar-1 pos-rel">
+    <label for="standard-input" class="input-label pos-abs">Name</label>
+    <input type="text" class="input std-disabled-input" placeholder="Disabled Input" disabled />
+  </div>
+
+  <div class="mar-1 pos-rel">
+    <label for="standard-input" class="input-label pos-abs error-label">Email</label>
+    <input type="email" class="input error-input" placeholder="abc@gmail.com" />
+    <p class="pad-0-25 sm-text error-msg">Please enter correct email</p>
+  </div>
+
+  <div class="mar-1 pos-rel">
+    <label for="standard-input" class="input-label pos-abs warning-label">Password</label>
+    <input type="password" class="input warning-input" placeholder="enter password" />
+    <p class="pad-0-25 sm-text warning-msg">Password strength good</p>
+  </div>
+
+  <div class="mar-1 pos-rel">
+    <label for="standard-input" class="input-label pos-abs success-label">Password</label>
+    <input type="password" class="input success-input" placeholder="enter password" />
+    <p class="pad-0-25 sm-text success-msg">Password strength excellent</p>
+  </div>
+
+</body>
+
+</html>
