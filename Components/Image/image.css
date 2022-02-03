@@ -1,0 +1,14 @@
+@import "../../style.css";
+
+.img-container {
+  width: 20rem;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+.round-img {
+  clip-path: circle();
+}
