@@ -6,6 +6,7 @@
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 /* display property css */
@@ -26,7 +27,26 @@
   display: none;
 }
 
+/* visibility */
+
+.vis-hidden {
+  visibility: hidden;
+}
+
+.vis-visible {
+  visibility: visible;
+}
+
+/* flex wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /* flex align css */
+.align-start {
+  align-items: start;
+}
+
 .align-center {
   align-items: center;
 }
@@ -35,7 +55,28 @@
   align-items: baseline;
 }
 
+/* flex justify css */
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-spc-bet {
+  justify-content: space-between;
+}
+
 /* flex gap css */
+.gap-0-25 {
+  gap: 0.25rem;
+}
+
+.gap-0-5 {
+  gap: 0.5rem;
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -57,28 +98,84 @@
   position: absolute;
 }
 
+.pos-sticky-t0 {
+  position: sticky;
+  top: 0;
+}
+
 /* margin property css */
-.mar-1 {
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.m-0-5 {
+  margin: 0.5rem;
+}
+
+.m-1 {
   margin: 1rem;
 }
 
-.mar-left-auto {
+.m-2 {
+  margin: 2rem;
+}
+
+.ml-auto {
   margin-left: auto;
 }
 
-.mar-right-auto {
-  margin-right: auto;
+.mr-0-25 {
+  margin-right: 0.25rem;
 }
 
-.mar-right-0-5 {
+.my-0-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-0-25 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mx-0-5 {
+  margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.mar-left-0-5 {
-  margin-left: 0.5rem;
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* padding property css */
-.pad-0-25 {
+.p-0-25 {
   padding: 0.25rem;
+}
+
+/* width */
+.w-50p {
+  width: 50%;
+}
+
+.w-100p {
+  width: 100%;
+}
+
+/* max-width */
+.mw-24r {
+  max-width: 24rem;
+}
+
+.mw-20r {
+  max-width: 20rem;
+}
+
+.mw-16r {
+  max-width: 16rem;
 }
