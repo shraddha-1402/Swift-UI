@@ -4,16 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
   <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
-  <title>SWIFT UI</title>
+  <title>Swift UI</title>
 </head>
 
 <body>
-  <h1>Component Library</h1>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link" target="_blank" rel="noopener noreferrer">
+        <li class="fab fa-github icon large-icon header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="grid-2-col m-2">
+    <div class="flex-col align-start justify-center">
+      <h1 class="my-1 xl-text">Build Beautiful UIs Swiftly</h1>
+      <p class="my-0-5">A component library for all your website designs. Just copy paste the code of the
+        components and you are ready to go. Click the link below to Get Started! </p>
+      <div class="my-1">
+        <a href="https://github.com/shraddha-1402/Swift-UI" class="link" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-outline-primary">GitHub</button>
+        </a>
+        <a href="./Docsite/installation.html">
+          <button class="btn btn-solid-primary mx-0-5">Get Started</button>
+        </a>
+      </div>
+    </div>
+    <img src="./Images/hero-img.svg" alt="hero-img" class="responsive-img">
+  </main>
+
 </body>
 
 </html>
