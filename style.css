@@ -9,7 +9,11 @@
 
 * {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   box-sizing: border-box;
   word-wrap: break-word;
+}
+
+i {
+  color: inherit;
 }
