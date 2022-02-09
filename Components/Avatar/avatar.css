@@ -1,10 +1,5 @@
 @import "../../style.css";
 
-.avatar-container {
-  gap: 1rem;
-  margin: 1rem;
-}
-
 .sm-avatar {
   width: 3rem;
   height: 3rem;
