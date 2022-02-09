@@ -5,61 +5,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./button.css">
   <title>Button</title>
 </head>
 
 <body>
-  <div class="flex-row">
-    <button class="btn btn-solid-primary">Primary</button>
-    <button class="btn btn-solid-secondary">Secondary</button>
-    <button class="btn btn-solid-danger">Danger</button>
-  </div>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
 
-  <div class="flex-row">
-    <button class="btn btn-outline-primary">Primary</button>
-    <button class="btn btn-outline-secondary">Secondary</button>
-    <button class="btn btn-outline-danger">Danger</button>
-  </div>
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item sidebar-item-focus link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Components/Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Components/Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Components/Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Components/Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Badge/badge.html" class="link   text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Badge
+        </a>
+        <a href="../Card/card.html" class="link   text-regular-weight ml-auto">
+          Card
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Button</h1>
+      <p class="my-0-5">Buttons are also called as call to action. We have range of buttons and their states. You may
+        use a tag or button element, you need to add respective classes, and you are good to go.</p>
 
-  <div class="flex-row">
-    <button class="btn btn-solid-primary">
-      <i class="fas fa-shopping-cart"></i>
-      Add to cart
-    </button>
+      <h3 class="content-title component-preview-heading">Example of Solid Buttons</h3>
 
-    <button class="btn btn-solid-secondary">
-      <i class="fas fa-edit"></i>
-      Edit Text
-    </button>
+      <div class="component-preview flex-row flex-wrap">
+        <button class="m-1 btn btn-solid-primary">Primary</button>
+        <button class="m-1 btn btn-solid-secondary">Secondary</button>
+        <button class="m-1 btn btn-solid-danger">Danger</button>
+      </div>
 
-    <button class="btn btn-solid-danger">
-      <i class="fas fa-trash"></i>
-      Delete
-    </button>
-  </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-danger%2522%253EDanger%253C%252Fbutton%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
 
-  <a href="#">
-    <button class="btn btn-outline-primary">Link Primary Button</button>
-  </a>
+      <h3 class="content-title component-preview-heading">Example of Outline Buttons</h3>
+      <div class="component-preview flex-row flex-wrap">
+        <button class="m-1 btn btn-outline-primary">Primary</button>
+        <button class="m-1 btn btn-outline-secondary">Secondary</button>
+        <button class="m-1 btn btn-outline-danger">Danger</button>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%253C%252Fbutton%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
 
-  <a href="#">
-    <button class="btn btn-outline-secondary">Link Secondary Button</button>
-  </a>
+      <h3 class="content-title component-preview-heading">Example of Icon Buttons</h3>
+      <div class="component-preview flex-row flex-wrap">
+        <button class="m-1 btn btn-solid-primary">
+          <i class="fas fa-shopping-cart"></i>
+          Add to cart
+        </button>
 
-  <div class="flex-row gap-2">
-    <div class="pos-rel mar-1">
-      <button class="btn btn-solid-danger btn-float mar-1">
-        <i class="fas fa-trash icon"></i>
-      </button>
+        <button class="m-1 btn btn-solid-secondary">
+          <i class="fas fa-edit"></i>
+          Edit Text
+        </button>
+
+        <button class="m-1 btn btn-solid-danger">
+          <i class="fas fa-trash"></i>
+          Delete
+        </button>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520Add%2520to%2520cart%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-edit%2522%253E%253C%252Fi%253E%250A%2520%2520Edit%2520Text%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-danger%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2520%2520Delete%250A%253C%252Fbutton%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Link Buttons</h3>
+      <div class="component-preview flex-row flex-wrap">
+        <a href="#" class="m-1">
+          <button class="btn btn-outline-primary link-btn">Link Primary Button</button>
+        </a>
+
+        <a href="#" class="m-1">
+          <button class="btn btn-outline-secondary link-btn">Link Secondary Button</button>
+        </a>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520link-btn%2522%253ELink%2520Primary%2520Button%253C%252Fbutton%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2520link-btn%2522%253ELink%2520Secondary%2520Button%253C%252Fbutton%253E%250A%253C%252Fa%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Float Buttons</h3>
+      <div class="component-preview flex-row flex-wrap">
+        <button class="btn btn-solid-danger btn-float m-1">
+          <i class="fas fa-trash icon"></i>
+        </button>
+
+        <button class="btn btn-solid-secondary btn-float m-1">
+          <i class="fas fa-plus icon"></i>
+        </button>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-solid-danger%2520btn-float%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2520icon%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2520btn-float%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2520icon%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
     </div>
-
-    <div class="pos-rel mar-1">
-      <button class="btn btn-solid-secondary btn-float mar-1">
-        <i class="fas fa-plus icon"></i>
-      </button>
-    </div>
-  </div>
+  </main>
 
 </body>
 
