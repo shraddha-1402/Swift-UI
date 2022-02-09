@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./text.css">
+  <title>Typography</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon  header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item sidebar-item-focus link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Snackbar/snackbar.html" class="link   text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Snackbar
+        </a>
+        <a href="../Alert/alert.html" class="link   text-regular-weight ml-auto hidden">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Typography</h1>
+      <p class="my-0-5">Some text utilities you can use for writing hierarchial texts.</p>
+
+      <h3 class="content-title component-preview-heading">Example of Headings</h3>
+      <div class="component-preview">
+        <h1 class="m-0-5">Heading H1</h1>
+        <h2 class="m-0-5">Heading H2</h2>
+        <h3 class="m-0-5">Heading H3</h3>
+        <h4 class="m-0-5">Heading H4</h4>
+        <h5 class="m-0-5">Heading H5</h5>
+        <h6 class="m-0-5">Heading H6</h6>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522m-0-5%2522%253EHeading%2520H1%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522m-0-5%2522%253EHeading%2520H2%253C%252Fh2%253E%250A%253Ch3%2520class%253D%2522m-0-5%2522%253EHeading%2520H3%253C%252Fh3%253E%250A%253Ch4%2520class%253D%2522m-0-5%2522%253EHeading%2520H4%253C%252Fh4%253E%250A%253Ch5%2520class%253D%2522m-0-5%2522%253EHeading%2520H5%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522m-0-5%2522%253EHeading%2520H6%253C%252Fh6%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+
+      <h3 class="content-title component-preview-heading">Example of Other Typographies</h3>
+      <div class="component-preview">
+        <p class="sm-text m-0-5">
+          Small Text
+        </p>
+
+        <p class="sd-text m-0-5">
+          Medium text
+        </p>
+
+        <p class="lg-text m-0-5">
+          Large Text
+        </p>
+
+        <p class="gray-text m-0-5">
+          Gray Text
+        </p>
+
+        <p class="left-text m-0-5">
+          Left Align Text
+        </p>
+
+        <p class="center-text m-0-5">
+          Center Align Text
+        </p>
+
+        <p class="right-text m-0-5">
+          Right Align Text
+        </p>
+
+        <p class="text-line-through m-0-5">
+          Striked Through Text
+        </p>
+
+        <p class="text-light-weight m-0-5">
+          Sentence with light font weight
+        </p>
+
+        <p class="text-bold-weight m-0-5">
+          Sentence with bold font weight
+        </p>
+
+      </div>
+
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522sm-text%2520m-0-5%2522%253E%250A%2520%2520Small%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522sd-text%2520m-0-5%2522%253E%250A%2520%2520Medium%2520text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522lg-text%2520m-0-5%2522%253E%250A%2520%2520Large%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522gray-text%2520m-0-5%2522%253E%250A%2520%2520Gray%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522left-text%2520m-0-5%2522%253E%250A%2520%2520Left%2520Align%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522center-text%2520m-0-5%2522%253E%250A%2520%2520Center%2520Align%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522right-text%2520m-0-5%2522%253E%250A%2520%2520Right%2520Align%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522text-line-through%2520m-0-5%2522%253E%250A%2520%2520Striked%2520Through%2520Text%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522text-light-weight%2520m-0-5%2522%253E%250A%2520%2520Sentence%2520with%2520light%2520font%2520weight%250A%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522text-bold-weight%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sentence%2520with%2520bold%2520font%2520weight%250A%253C%252Fp%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

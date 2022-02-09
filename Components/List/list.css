@@ -1,0 +1,16 @@
+@import "../../style.css";
+
+.list-style-none {
+  list-style: none;
+}
+
+.list-item {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  width: fit-content;
+}
+
+.list-item-badge {
+  top: 8px;
+  right: 10px;
+}

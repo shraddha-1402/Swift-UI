@@ -1,0 +1,53 @@
+@import "../../style.css";
+
+.sm-text {
+  font-size: 0.8em;
+}
+
+.md-text {
+  font-size: 1.2em;
+}
+
+.lg-text {
+  font-size: 1.4em;
+}
+
+.xl-text {
+  font-size: 2em;
+}
+
+.gray-text {
+  color: var(--gray);
+}
+
+.left-text {
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.text-light-weight {
+  font-weight: 300;
+}
+
+.text-regular-weight {
+  font-weight: 500;
+}
+
+.text-bold-weight {
+  font-weight: 700;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
