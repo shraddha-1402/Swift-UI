@@ -5,71 +5,178 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
-  <script defer src="../component.js"></script>
+  <script defer src="./badge.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./badge.css">
   <title>Badge</title>
 </head>
 
 <body>
-  <div class="mar-1 flex-col align-baseline gap-2">
-    <p class="pos-rel">
-      Text with a badge
-      <span class="badge pos-abs sm-badge sm-txt-badge">4</span>
-    </p>
 
-    <p class="pos-rel">
-      Text with a large badge
-      <span class="badge pos-abs lg-badge lg-txt-badge">4</span>
-    </p>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item sidebar-item-focus link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Avatar/avatar.html" class="link   text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Avatar
+        </a>
+        <a href="../Button/button.html" class="link   text-regular-weight ml-auto">
+          Button
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Badge</h1>
+      <p class="my-0-5">Badges are being used to display a notification count or status information</p>
 
-    <p class="pos-rel lg-text">
-      Large text with a large badge
-      <span class="badge pos-abs lg-badge lg-txt-badge">4</span>
-    </p>
+      <h3 class="content-title component-preview-heading">Example of Text Badges</h3>
 
-    <button class="pos-rel btn">
-      <span class="badge pos-abs sm-badge btn-left-badge">8</span>
-      Action
-    </button>
+      <div class="component-preview">
+        <p class="pos-rel m-1">
+          Text with a badge
+          <span class="badge pos-abs sm-badge sm-txt-badge">4</span>
+        </p>
 
-    <button id="toggle-btn" class="pos-rel btn">
-      Hide
-      <span class="badge pos-abs sm-badge btn-right-badge">8</span>
-    </button>
+        <p class="pos-rel m-1">
+          Text with a large badge
+          <span class="badge pos-abs lg-badge lg-txt-badge">4</span>
+        </p>
 
-    <i class="far fa-comment pos-rel icon-size">
-      <span class="badge pos-abs sm-badge icon-badge">10</span>
-    </i>
+        <p class="pos-rel lg-text m-1">
+          Large text with a large badge
+          <span class="badge pos-abs lg-badge lg-txt-badge">4</span>
+        </p>
+      </div>
 
-    <i class="fas fa-shopping-cart pos-rel icon-size">
-      <span class="badge pos-abs sm-badge icon-badge">10</span>
-    </i>
+      <div class="code-display">
+        <code>
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Small%2520Badge%2520--%253E%250A%253Cp%2520class%253D%2522pos-rel%2520m-1%2522%253E%250A%2520Text%2520with%2520a%2520badge%250A%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520sm-badge%2520sm-txt-badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fp%253E%250A%250A%253C%21--%2520Large%2520Badge%2520--%253E%250A%253Cp%2520class%253D%2522pos-rel%2520m-1%2522%253E%250A%2520Text%2520with%2520a%2520large%2520badge%250A%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520lg-badge%2520lg-txt-badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fp%253E%250A%250A%253C%21--%2520Large%2520Badge%2520--%253E%250A%253Cp%2520class%253D%2522pos-rel%2520lg-text%2520m-1%2522%253E%250A%2520Large%2520text%2520with%2520a%2520large%2520badge%250A%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520lg-badge%2520lg-txt-badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fp%253E%250A"
+          style="transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </code>
+      </div>
 
-    <i class="far fa-envelope pos-rel icon-size">
-      <span class="badge pos-abs sm-badge icon-badge">10</span>
-    </i>
+      <h3 class="content-title component-preview-heading">Example of Button Badges</h3>
+      <div class="component-preview">
+        <button class="pos-rel btn m-1">
+          <span class="badge pos-abs sm-badge btn-left-badge">8</span>
+          Action
+        </button>
 
-    <figure class="pos-rel">
-      <img class=" lg-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
-      <div class="avatar-badge pos-abs lg-avatar-badge online"></div>
-    </figure>
+        <button id="toggle-btn" class="pos-rel btn m-1" title="Badge Hide On Click">
+          Hide
+          <span class="badge pos-abs sm-badge btn-right-badge">8</span>
+        </button>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Button%2520Badge%2520--%253E%250A%253Cbutton%2520class%253D%2522pos-rel%2520btn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520sm-badge%2520btn-left-badge%2522%253E8%253C%252Fspan%253E%250A%2520%2520Action%250A%253C%252Fbutton%253E%250A%250A%253C%21--%2520Button%2520Toggle%2520Badge%2520--%253E%250A%253Cbutton%2520id%253D%2522toggle-btn%2522%2520class%253D%2522pos-rel%2520btn%2522%253E%250A%2520%2520Hide%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520sm-badge%2520btn-right-badge%2522%253E8%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A"
+          style="transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        </code>
+      </div>
 
-    <figure class="pos-rel">
-      <img class=" md-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
-      <div class="avatar-badge pos-abs md-avatar-badge offline"></div>
-    </figure>
+      <h3 class="content-title component-preview-heading">Example of Icon Badges</h3>
+      <div class="component-preview">
+        <i class="far fa-comment pos-rel m-1 icon-size">
+          <span class="badge pos-abs sm-badge icon-badge">10</span>
+        </i>
 
-    <figure class="pos-rel">
-      <img class=" sm-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
-      <div class="avatar-badge pos-abs sm-avatar-badge dnd"></div>
-    </figure>
+        <i class="fas fa-shopping-cart pos-rel m-1 icon-size">
+          <span class="badge pos-abs sm-badge icon-badge">10</span>
+        </i>
 
-    <figure class="pos-rel">
-      <img class=" lg-avatar round-avatar" src="../Assets/user-profile.png" alt="avatar">
-      <div class="avatar-badge pos-abs lg-avatar-badge fas fa-exclamation-circle"></div>
-    </figure>
+        <i class="far fa-envelope pos-rel m-1 icon-size">
+          <span class="badge pos-abs sm-badge icon-badge">10</span>
+        </i>
+      </div>
 
-  </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ci%2520class%253D%2522far%2520fa-comment%2520pos-rel%2520m-1%2520icon-size%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520sm-badge%2520icon-badge%2522%253E10%253C%252Fspan%253E%250A%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520pos-rel%2520m-1%2520icon-size%2522%253E%250A%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520sm-badge%2520icon-badge%2522%253E10%253C%252Fspan%253E%250A%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522far%2520fa-envelope%2520pos-rel%2520m-1%2520icon-size%2522%253E%250A%2520%253Cspan%2520class%253D%2522badge%2520pos-abs%2520sm-badge%2520icon-badge%2522%253E10%253C%252Fspan%253E%250A%253C%252Fi%253E%250A"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Avatar Badges</h3>
+      <div class="flex-row align-baseline flex-wrap component-preview">
+        <figure class="pos-rel m-1">
+          <img class=" lg-avatar round-avatar" src="../../Images/avatar.jpeg" alt="avatar">
+          <div class="avatar-badge pos-abs lg-avatar-badge fas fa-exclamation-circle"></div>
+        </figure>
+
+        <figure class="pos-rel m-1">
+          <img class=" lg-avatar round-avatar" src="../../Images/avatar.jpeg" alt="avatar">
+          <div class="avatar-badge pos-abs lg-avatar-badge online"></div>
+        </figure>
+
+        <figure class="pos-rel m-1">
+          <img class=" md-avatar round-avatar" src="../../Images/avatar.jpeg" alt="avatar">
+          <div class="avatar-badge pos-abs md-avatar-badge offline"></div>
+        </figure>
+
+        <figure class="pos-rel m-1">
+          <img class=" sm-avatar round-avatar" src="../../Images/avatar.jpeg" alt="avatar">
+          <div class="avatar-badge pos-abs sm-avatar-badge dnd"></div>
+        </figure>
+
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Large%2520Avatar%2520with%2520Badge%2520--%253E%250A%253Cfigure%2520class%253D%2522pos-rel%2520m-1%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522%2520lg-avatar%2520round-avatar%2522%2520src%253D%2522..%252FAssets%252Fuser-profile.png%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520pos-abs%2520lg-avatar-badge%2520online%2522%253E%253C%252Fdiv%253E%250A%253C%252Ffigure%253E%250A%250A%253C%21--%2520Medium%2520Avatar%2520with%2520Badge%2520--%253E%250A%253Cfigure%2520class%253D%2522pos-rel%2520m-1%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522%2520md-avatar%2520round-avatar%2522%2520src%253D%2522..%252FAssets%252Fuser-profile.png%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520pos-abs%2520md-avatar-badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%253C%252Ffigure%253E%250A%250A%253C%21--%2520Small%2520Avatar%2520with%2520Badge%2520--%253E%250A%253Cfigure%2520class%253D%2522pos-rel%2520m-1%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522%2520sm-avatar%2520round-avatar%2522%2520src%253D%2522..%252FAssets%252Fuser-profile.png%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520pos-abs%2520sm-avatar-badge%2520dnd%2522%253E%253C%252Fdiv%253E%250A%253C%252Ffigure%253E%250A%250A%253C%21--%2520Large%2520Avatar%2520with%2520Icon%2520Badge%2520--%253E%250A%253Cfigure%2520class%253D%2522pos-rel%2520m-1%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522%2520lg-avatar%2520round-avatar%2522%2520src%253D%2522..%252FAssets%252Fuser-profile.png%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520pos-abs%2520lg-avatar-badge%2520fas%2520fa-exclamation-circle%2522%253E%253C%252Fdiv%253E%250A%253C%252Ffigure%253E%250A"
+          style="transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        </code>
+      </div>
+    </div>
+  </main>
 
 </body>
 

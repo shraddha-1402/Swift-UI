@@ -23,6 +23,13 @@
   font-size: 1rem;
 }
 
+.square-badge {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+}
+
 .sm-txt-badge {
   top: -10px;
 }
