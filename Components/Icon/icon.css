@@ -1,0 +1,26 @@
+.icon {
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.small-icon {
+  font-size: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.medium-icon {
+  font-size: 1.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.large-icon {
+  font-size: 2rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
