@@ -1,6 +1,7 @@
 @import "./Utilities/color.css";
 @import "./Utilities/utilities.css";
 @import "./Docsite/docsite.css";
+@import "./Components/Icon/icon.css";
 @import "./Components/Alert/alert.css";
 @import "./Components/Avatar/avatar.css";
 @import "./Components/Badge/badge.css";
