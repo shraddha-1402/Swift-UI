@@ -1,0 +1,39 @@
+@import "../../style.css";
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 3px var(--gray);
+  font-size: 1em;
+}
+
+.chip-input {
+  outline: none;
+  border: none;
+  background: none;
+  height: 1.5rem;
+  width: 8rem;
+  margin: 0.5rem;
+  font-size: inherit;
+}
+
+.chip {
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  line-height: 2.5em;
+}
+
+.chip:hover {
+  background-color: #cecece;
+}
+
+.chip-cross {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: #929292;
+}
