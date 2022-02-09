@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./list.css">
+  <title>List</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon  header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item sidebar-item-focus link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Input/input.html" class="link   text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Input
+        </a>
+        <a href="../Navigation/navigation.html" class="link   text-regular-weight ml-auto">
+          Navigation
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">List</h1>
+      <p class="my-0-5">Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.
+      </p>
+
+      <h3 class="content-title component-preview-heading">Example of Spaced List</h3>
+      <div class="component-preview">
+        <ul class="flex-row flex-wrap list-style-none">
+          <li class="list-item m-1">List Item1</li>
+          <li class="list-item m-1">List Item2</li>
+          <li class="list-item m-1">List Item3</li>
+          <li class="list-item m-1">List Item4</li>
+        </ul>
+      </div>
+
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522flex-row%2520list-style-none%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520m-1%2522%253EList%2520Item1%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520m-1%2522%253EList%2520Item2%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520m-1%2522%253EList%2520Item3%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520m-1%2522%253EList%2520Item4%253C%252Fli%253E%250A%253C%252Ful%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Stacked List</h3>
+      <div class="component-preview">
+        <ul class="list-style-none mw-20r m-1">
+          <li class="list-item my-0-5 text-regular-weight pos-rel">List Item1
+            <i class="fa fa-times icon sm-text pos-abs list-item-badge"></i>
+            <p class="sm-text my-0-5 text-light-weight">Your purchased items have been shipped. Click this link to track
+              them
+            </p>
+          </li>
+          <li class="list-item my-0-5 text-regular-weight pos-rel">List Item2
+            <i class="fa fa-times icon sm-text pos-abs list-item-badge"></i>
+            <p class="sm-text my-0-5 text-light-weight">Your purchased items have been shipped. Click this link to track
+              them
+            </p>
+          </li>
+          <li class="list-item my-0-5 text-regular-weight pos-rel">List Item3
+            <i class="fa fa-times icon sm-text pos-abs list-item-badge"></i>
+            <p class="sm-text my-0-5 text-light-weight">Your purchased items have been shipped. Click this link to track
+              them
+            </p>
+          </li>
+          <li class="list-item my-0-5 text-regular-weight pos-rel">List Item4
+            <i class="fa fa-times icon sm-text pos-abs list-item-badge"></i>
+            <p class="sm-text my-0-5 text-light-weight">Your purchased items have been shipped. Click this link to track
+              them
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-style-none%2520mw-20r%2520m-1%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520my-0-5%2520text-regular-weight%2520pos-rel%2522%253EList%2520Item1%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2520icon%2520sm-text%2520pos-abs%2520list-item-badge%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2520my-0-5%2520text-light-weight%2522%253EYour%2520purchased%2520items%2520have%2520been%2520shipped.%2520Click%2520this%2520link%2520to%2520track%2520them%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520my-0-5%2520text-regular-weight%2520pos-rel%2522%253EList%2520Item2%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2520icon%2520sm-text%2520pos-abs%2520list-item-badge%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2520my-0-5%2520text-light-weight%2522%253EYour%2520purchased%2520items%2520have%2520been%2520shipped.%2520Click%2520this%2520link%2520to%2520track%2520them%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520my-0-5%2520text-regular-weight%2520pos-rel%2522%253EList%2520Item3%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2520icon%2520sm-text%2520pos-abs%2520list-item-badge%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2520my-0-5%2520text-light-weight%2522%253EYour%2520purchased%2520items%2520have%2520been%2520shipped.%2520Click%2520this%2520link%2520to%2520track%2520them%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-item%2520my-0-5%2520text-regular-weight%2520pos-rel%2522%253EList%2520Item4%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2520icon%2520sm-text%2520pos-abs%2520list-item-badge%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2520my-0-5%2520text-light-weight%2522%253EYour%2520purchased%2520items%2520have%2520been%2520shipped.%2520Click%2520this%2520link%2520to%2520track%2520them%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
