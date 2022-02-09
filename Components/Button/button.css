@@ -2,13 +2,12 @@
 
 .btn {
   padding: 0.5rem 1rem;
-  margin: 1rem;
   font-size: 1rem;
   border-radius: 0.25rem;
   border: none;
-  box-shadow: 1px 1px 3px var(--gray);
   cursor: pointer;
   transition: all 0.2s ease;
+  font-family: inherit;
 }
 
 .btn:hover {
@@ -55,9 +54,17 @@
   border: 1px solid var(--red);
 }
 
+.link-btn:hover {
+  text-decoration: underline;
+}
+
 .btn-float {
   position: fixed;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
+}
+
+.component-preview .btn-float {
+  position: static;
 }
