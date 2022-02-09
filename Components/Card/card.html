@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./card.css">
+  <title>Card</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item sidebar-item-focus link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Button/button.html" class="link text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Button
+        </a>
+        <a href="../Chip/chip.html" class="link text-regular-weight ml-auto">
+          Chip
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Card</h1>
+      <p class="my-0-5">Card are used to show user related data collectively, like product details.</p>
+
+      <h3 class="content-title component-preview-heading">Example of Card With Badges</h3>
+      <div class="flex-row flex-wrap align-start component-preview">
+        <!-- Card with heart badge -->
+        <div class="card m-1 mw-16r">
+          <div class="pos-rel">
+            <i class="fas fa-heart pos-abs card-badge-left icon small-icon"></i>
+            <img src="../../Images/card-img.png" alt="cd-img" class="card-img responsive-img">
+          </div>
+          <div class="flex-col gap-0-25 m-0-5">
+            <h3>Stark Light Blue Hoodie</h3>
+            <p class="sm-text">by Kurt Wagner</p>
+            <h4>Rs. 500 <span class="text-line-through text-light-weight">Rs. 750</span><span class="primary-text">
+                66% Off</span>
+            </h4>
+          </div>
+          <div class="flex-row">
+            <button class="btn btn-solid-primary m-0-5 w-100p">
+              <i class="fas fa-shopping-cart mr-0-25"></i>
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card with square badge -->
+        <div class="card m-1 mw-16r">
+          <div class="pos-rel">
+            <span class="pos-abs card-badge-right square-badge sm-text">New</span>
+            <i class="fas fa-heart pos-abs card-badge-left icon small-icon"></i>
+            <img src="../../Images/card-img.png" alt="cd-img" class="card-img responsive-img">
+          </div>
+          <div class="flex-col gap-0-25 m-0-5">
+            <h3>Stark Light Blue Hoodie</h3>
+            <p class="sm-text">by Kurt Wagner</p>
+            <h4>Rs. 500 <span class="text-line-through text-light-weight">Rs. 750</span><span class="primary-text">
+                66% Off</span>
+            </h4>
+          </div>
+          <div class="flex-row">
+            <button class="btn btn-solid-primary w-100p m-0-5">
+              <i class="fas fa-shopping-cart mr-0-25"></i>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Card%2520with%2520heart%2520badge%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520m-1%2520mw-16r%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522pos-rel%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520pos-abs%2520card-badge-left%2520icon%2520small-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252FsoLongHoodie.png%2522%2520alt%253D%2522cd-img%2522%2520class%253D%2522card-img%2520responsive-img%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520gap-0-25%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%253Ch3%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ch4%253ERs.%2520500%2520%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text%2522%253E66%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh4%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520m-0-5%2520w-100p%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-0-25%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Card%2520with%2520square%2520badge%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520m-1%2520mw-16r%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522pos-rel%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522pos-abs%2520card-badge-right%2520square-badge%2520sm-text%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520pos-abs%2520card-badge-left%2520icon%2520small-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252FsoLongHoodie.png%2522%2520alt%253D%2522cd-img%2522%2520class%253D%2522card-img%2520responsive-img%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520gap-0-25%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%253Ch3%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ch4%253ERs.%2520500%2520%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text%2522%253E%252066%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh4%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520w-100p%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-0-25%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style=" transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Card With Dismiss Badge</h3>
+      <div class="flex-row flex-wrap align-start component-preview">
+        <!-- Card with dismiss -->
+        <div class="card m-1 mw-16r">
+          <div class="pos-rel">
+            <i class="fa fa-times pos-abs card-badge-left icon small-icon"></i>
+            <img src="../../Images/card-img.png" alt="cd-img" class="card-img responsive-img">
+          </div>
+          <div class="flex-col gap-0-25 m-0-5">
+            <h3>Stark Light Blue Hoodie</h3>
+            <p class="sm-text">by Kurt Wagner</p>
+            <h4>Rs. 500 <span class="text-line-through text-light-weight">Rs. 750</span><span class="primary-text">
+                66% Off</span>
+            </h4>
+          </div>
+          <div class="flex-row">
+            <button class="btn btn-solid-primary m-0-5 w-100p">
+              <i class="fas fa-shopping-cart mr-0-25"></i>
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card with two buttons -->
+        <div class="card m-1 mw-24r">
+          <div class="pos-rel">
+            <i class="fa fa-times pos-abs card-badge-left icon small-icon"></i>
+            <img src="../../Images/card-img.png" alt="cd-img" class="card-img responsive-img">
+          </div>
+          <div class="flex-col gap-0-25 m-0-5">
+            <h3>Stark Light Blue Hoodie</h3>
+            <p class="sm-text">by Kurt Wagner</p>
+            <h4>Rs. 500 <span class="text-line-through text-light-weight">Rs. 750</span><span class="primary-text">
+                66% Off</span>
+            </h4>
+          </div>
+          <div class="flex-row">
+            <button class="btn btn-outline-secondary m-0-5 w-50p">
+              Add To Wishlist
+            </button>
+            <button class="btn btn-solid-primary m-0-5 w-50p">
+              <i class="fas fa-shopping-cart mr-0-25"></i>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+
+          <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Card%2520with%2520dismiss%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520m-1%2520mw-16r%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pos-rel%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2520pos-abs%2520card-badge-left%2520icon%2520small-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252FsoLongHoodie.png%2522%2520alt%253D%2522cd-img%2522%2520class%253D%2522card-img%2520responsive-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520gap-0-25%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253ERs.%2520500%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%253Cspan%2520class%253D%2522primary-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252066%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520m-0-5%2520w-100p%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-0-25%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520two%2520buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520m-1%2520mw-20r%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pos-rel%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2520pos-abs%2520card-badge-left%2520icon%2520small-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252FsoLongHoodie.png%2522%2520alt%253D%2522cd-img%2522%2520class%253D%2522card-img%2520responsive-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520gap-0-25%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253ERs.%2520500%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%253Cspan%2520class%253D%2522primary-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252066%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2520m-0-5%2520w-50p%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Wishlist%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520m-0-5%2520w-50p%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-0-25%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Card With Text Overlay</h3>
+      <div class="flex-row flex-wrap align-start component-preview">
+        <!-- Card with text overlay -->
+        <div class="card m-1 mw-16r pos-rel">
+          <img src="../../Images/card-img.png" alt="cd-img" class="card-img responsive-img">
+          <div class="flex-col gap-0-25 m-0-5">
+            <h3>Stark Light Blue Hoodie</h3>
+            <p class="sm-text">by Kurt Wagner</p>
+            <h4>Rs. 500 <span class="text-line-through text-light-weight">Rs. 750</span><span class="primary-text">
+                66% Off</span>
+            </h4>
+          </div>
+          <div class="flex-row">
+            <button class="btn btn-solid-primary w-100p m-0-5">
+              <i class="fas fa-shopping-cart mr-0-25"></i>
+              Add to cart
+            </button>
+          </div>
+          <div class="overlay pos-abs"></div>
+          <h3 class="pos-abs overlay-text center-text w-100p">Out Of Stock</h3>
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=777&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Card%2520with%2520text%2520overlay%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520m-1%2520mw-16r%2520pos-rel%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252FsoLongHoodie.png%2522%2520alt%253D%2522cd-img%2522%2520class%253D%2522card-img%2520responsive-img%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520gap-0-25%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%253Ch3%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ch4%253ERs.%2520500%2520%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text%2522%253E66%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh4%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520w-100p%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-0-25%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522overlay%2520pos-abs%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253Ch3%2520class%253D%2522pos-abs%2520overlay-text%2520center-text%2520w-100p%2522%253EOut%2520Of%2520Stock%253C%252Fh3%253E%250A%253C%252Fdiv%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+
+      <h3 class="content-title component-preview-heading">Example of Card With Horizontal Layout</h3>
+      <div class="flex-row flex-wrap align-start component-preview">
+        <!-- Card with Horizontal Layout -->
+        <div class="card flex-row m-1 mw-24r">
+          <div class="pos-rel flex-row align-center">
+            <img src="../../Images/card-img.png" alt="cd-img" class="card-img responsive-img">
+          </div>
+          <div>
+            <div class="m-0-5">
+              <h3>Stark Light Blue Hoodie</h3>
+              <p class="sm-text my-0-25">by Kurt Wagner</p>
+              <h4 class=" my-0-25">Rs. 500
+                <span class="text-line-through text-light-weight">Rs. 750</span>
+                <span class="primary-text"> 66% Off</span>
+              </h4>
+              <p class="my-0-5">
+                A beautiful light blue hoodie, perfect for a chill winter day, with taylor's lyrics written on it!
+              </p>
+            </div>
+            <div class="flex-row">
+              <button class="btn btn-solid-primary m-0-5">
+                <i class="fas fa-shopping-cart mr-0-25"></i>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=777&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Card%2520with%2520horizontal%2520Layout%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520flex-row%2520m-1%2520mw-24r%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522pos-rel%2520flex-row%2520align-center%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252FAssets%252FsoLongHoodie.png%2522%2520alt%253D%2522cd-img%2522%2520class%253D%2522card-img%2520responsive-img%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522sm-text%2520my-0-25%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522%2520my-0-25%2522%253ERs.%2520500%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text%2522%253E%252066%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522my-0-5%2522%253EA%2520beautiful%2520light%2520blue%2520hoodie%252C%2520perfect%2520for%2520a%2520chill%2520winter%2520day%252C%2520with%2520taylor%27s%2520lyrics%2520written%2520on%2520it%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-0-25%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Card With Text Only</h3>
+      <div class="flex-row flex-wrap align-start component-preview">
+        <!-- Card with text only -->
+        <div class="card m-1 mw-16r">
+          <h3 class="m-0-5">Stark Light Blue Hoodie</h3>
+          <p class="sm-text mx-0-5">by Kurt Wagner</p>
+          <h4 class=" m-0-5">Rs. 500
+            <span class="text-line-through text-light-weight">Rs. 750</span>
+            <span class="primary-text"> 66% Off</span>
+          </h4>
+          <p class="m-0-5">
+            A beautiful light blue hoodie, perfect for a chill winter day, with taylor's lyrics written on it!
+          </p>
+          <div class="m-0-5">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=777&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Card%2520with%2520text%2520only%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520m-1%2520mw-16r%2522%253E%250A%2520%2520%253Ch3%2520class%253D%2522m-0-5%2522%253EStark%2520Light%2520Blue%2520Hoodie%253C%252Fh3%253E%250A%2520%2520%253Cp%2520class%253D%2522sm-text%2520mx-0-5%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%253Ch4%2520class%253D%2522%2520m-0-5%2522%253ERs.%2520500%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-line-through%2520text-light-weight%2522%253ERs.%2520750%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522primary-text%2522%253E%252066%2525%2520Off%253C%252Fspan%253E%250A%2520%2520%253C%252Fh4%253E%250A%2520%2520%253Cp%2520class%253D%2522m-0-5%2522%253EA%2520beautiful%2520light%2520blue%2520hoodie%252C%2520perfect%2520for%2520a%2520chill%2520winter%2520day%252C%2520with%2520taylor%27s%2520lyrics%2520written%2520on%2520it%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522m-0-5%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
