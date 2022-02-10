@@ -60,6 +60,29 @@ const actionOnModal = () => {
   items.forEach(item => item.addEventListener("click", closemodal));
 }
 
+// rating
+const actionOnRating = () => {
+  const ratingStars = document.querySelector("#rating");
+
+  const checkPreviousStars = (event) => {
+    // removing previous rating
+    for(let i = 1; i<=5; i++)
+      document.querySelector(`#rating-star-${i}`).classList.remove("rating-checked");
+    
+    // adding new rating
+    const id = event.target.id.split("-");
+    for(let i = Number(id[2]); i > 0; i--){
+      const star = document.querySelector(`#${id[0]}-${id[1]}-${String(i)}`);
+      star.classList.add("rating-checked");
+    }
+  }
+
+  ratingStars.childNodes.forEach(node => {
+    if(node.nodeName === "I")
+      node.addEventListener("click", checkPreviousStars);
+  })
+}
+
 // snackbar
 const actionOnSnackbar = ()=>{
   console.log("event firedd");
@@ -83,6 +106,8 @@ const checkElementPresent = () =>{
     addChips();
   else if(document.querySelector("#open-modal"))
     actionOnModal();
+  else if(document.querySelector("#rating"))
+    actionOnRating();
   else if(document.querySelectorAll(".snackbar-button"))
     actionOnSnackbar();
 }
