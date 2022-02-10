@@ -10,6 +10,32 @@ const toggleButtonBadge = () => {
   toggleBtn.addEventListener("click", hideBadge);
 }
 
+// dynamic chips
+const addChips = () => {
+  const chipContainer = document.querySelector("#chip_container");
+  const chipInput = document.querySelector("#chip_input");
+
+  const deleteChip = (event)=>{
+    event.target.parentElement.remove();
+  }
+
+  const addChip = (event)=>{
+    if(event.code == "Enter"){
+      let span = document.createElement("span");
+      let icon = document.createElement("i");
+      icon.setAttribute("class", "chip-cross fas fa-times-circle");
+      icon.addEventListener("click", deleteChip);
+      span.innerText = event.target.value;
+      span.setAttribute("class", "chip");
+      span.append(icon);
+      chipContainer.prepend(span);
+      event.target.value = "";
+    }
+  }
+
+  chipInput.addEventListener("keydown", addChip);
+}
+
 // modal 
 const actionOnModal = () => {
   const modalOpenBtn = document.querySelector("#open-modal");
@@ -53,6 +79,8 @@ const actionOnSnackbar = ()=>{
 const checkElementPresent = () =>{
   if(document.querySelector("#toggle-btn"))
     toggleButtonBadge();
+  else if(document.querySelector("#chip_container"))
+    addChips();
   else if(document.querySelector("#open-modal"))
     actionOnModal();
   else if(document.querySelectorAll(".snackbar-button"))
