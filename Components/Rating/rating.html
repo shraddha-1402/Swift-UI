@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <script defer src="../component.js"></script>
+  <link rel="stylesheet" href="./rating.css">
+  <title>Rating</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon  header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item sidebar-item-focus link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Modal/modal.html" class="link text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Modal
+        </a>
+        <a href="../Slider/slider.html" class="link text-regular-weight ml-auto">
+          Slider
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Rating</h1>
+      <p class="my-0-5">Rating components can be used as read-only badge or in reviews section. Can be used in reviews
+        section as form too.</p>
+
+      <h3 class="content-title component-preview-heading">Example of Rating</h3>
+      <div class="component-preview flex-col">
+        <div class="rating-example m-1">
+          <i class="fa fa-star rating-checked"></i>
+          <i class="fa fa-star rating-checked"></i>
+          <i class="fa fa-star rating-checked"></i>
+          <i class="fa fa-star rating-checked"></i>
+          <i class="fa fa-star rating-checked"></i>
+        </div>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Live Example</h3>
+      <div class="component-preview">
+        <div class="m-1" id="rating">
+          <i class="fa fa-star rating-star" id="rating-star-1" title="Click"></i>
+          <i class="fa fa-star rating-star" id="rating-star-2" title="Click"></i>
+          <i class="fa fa-star rating-star" id="rating-star-3" title="Click"></i>
+          <i class="fa fa-star rating-star" id="rating-star-4" title="Click"></i>
+          <i class="fa fa-star rating-star" id="rating-star-5" title="Click"></i>
+        </div>
+      </div>
+
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-example%2520m-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">JavaScript</h3>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=javascript&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=const%2520ratingStars%2520%253D%2520document.querySelector%28%2522%2523rating%2522%29%253B%250A%250Aconst%2520checkPreviousStars%2520%253D%2520%28event%29%2520%253D%253E%2520%257B%250A%2520%2520%252F%252F%2520removing%2520previous%2520rating%250A%2520%2520for%28let%2520i%2520%253D%25201%253B%2520i%253C%253D5%253B%2520i%252B%252B%29%250A%2520%2520%2520%2520document.querySelector%28%2560%2523rating-star-%2524%257Bi%257D%2560%29.classList.remove%28%2522rating-checked%2522%29%253B%250A%2520%2520%250A%2520%2520%252F%252F%2520adding%2520new%2520rating%250A%2520%2520const%2520id%2520%253D%2520event.target.id.split%28%2522-%2522%29%253B%250A%2520%2520for%28let%2520i%2520%253D%2520Number%28id%255B2%255D%29%253B%2520i%2520%253E%25200%253B%2520i--%29%257B%250A%2520%2520%2520%2520const%2520star%2520%253D%2520document.querySelector%28%2560%2523%2524%257Bid%255B0%255D%257D-%2524%257Bid%255B1%255D%257D-%2524%257BString%28i%29%257D%2560%29%253B%250A%2520%2520%2520%2520star.classList.add%28%2522rating-checked%2522%29%253B%250A%2520%2520%257D%250A%257D%250A%250AratingStars.childNodes.forEach%28node%2520%253D%253E%2520%257B%250A%2520%2520if%28node.nodeName%2520%253D%253D%253D%2520%2522I%2522%29%250A%2520%2520%2520%2520node.addEventListener%28%2522click%2522%252C%2520checkPreviousStars%29%253B%250A%257D%29%250A"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+    </div>
+  </main>
+
+
+
+</body>
+
+</html>

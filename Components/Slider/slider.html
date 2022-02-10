@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./slider.css">
+  <title>Slider</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon  header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html" class="sidebar-item link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item sidebar-item-focus link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../Rating/rating.html" class="link   text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          Rating
+        </a>
+        <a href="../Snackbar/snackbar.html" class="link   text-regular-weight ml-auto">
+          Snackbar
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Slider</h1>
+      <p class="my-0-5">Sliders are used to decide range for something like sound in videos, price in shopping sites,
+        etc.</p>
+
+      <h3 class="content-title component-preview-heading">Example of Slider</h3>
+      <div class="component-preview">
+        <input type="range" name="slider" class="slider m-1" id="simple-sider" min="1" max="100">
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%2520class%253D%2522slider%2520m-1%2522%2520id%253D%2522simple-sider%2522%2520min%253D%25221%2522%2520max%253D%2522100%2522%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Slider with Icon</h3>
+      <div class="component-preview">
+        <div class="m-1">
+          <i class="fas fa-volume-up icon medium-icon"></i>
+          <input type="range" name="slider" class="slider" id="simple-sider" min="1" max="100">
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522m-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-volume-up%2520icon%2520medium-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cinput%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%2520class%253D%2522slider%2522%2520id%253D%2522simple-sider%2522%2520min%253D%25221%2522%2520max%253D%2522100%2522%253E%250A%253C%252Fdiv%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Disabled Slider</h3>
+      <div class="component-preview">
+        <div class="m-1">
+          <i class="fas fa-volume-mute icon medium-icon gray-text"></i>
+          <input type="range" name="slider" class="slider" id="simple-sider" min="1" max="100" disabled>
+        </div>
+      </div>
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522m-1%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-volume-mute%2520icon%2520medium-icon%2520gray-text%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cinput%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%2520class%253D%2522slider%2522%2520id%253D%2522simple-sider%2522%2520min%253D%25221%2522%2520max%253D%2522100%2522%2520disabled%253E%250A%253C%252Fdiv%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+  </main>
+</body>
+
+</html>
