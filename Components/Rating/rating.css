@@ -1,0 +1,9 @@
+@import "../../style.css";
+
+.rating-star:hover {
+  color: var(--yellow);
+}
+
+.rating-checked {
+  color: var(--yellow);
+}
