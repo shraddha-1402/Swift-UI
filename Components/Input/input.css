@@ -2,12 +2,13 @@
 
 .input {
   outline: none;
-  max-width: 20rem;
-  padding: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
   border-width: 2px;
   border-style: solid;
   border-radius: 0.25rem;
   font-family: inherit;
+  font-size: 1em;
 }
 
 .input-label {
@@ -15,6 +16,7 @@
   left: 5px;
   padding: 0 0.15rem;
   background-color: var(--white);
+  font-size: 0.9em;
 }
 
 .std-input {
@@ -27,6 +29,10 @@
 
 .error-input {
   border-color: var(--red);
+}
+
+.input-validation-msg {
+  font-size: 0.9em;
 }
 
 .error-label,
