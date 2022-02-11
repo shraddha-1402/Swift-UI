@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./navigation.css">
+  <title>Navigation</title>
+</head>
+
+<body class="pos-rel">
+  <header class="header">
+    <a class="link" href="/">
+      <h1 class="header-heading primary-text">SWIFT UI</h1>
+    </a>
+    <ul class="header-nav-links">
+      <a href="https://github.com/shraddha-1402" class="link">
+        <li class="fab fa-github icon large-icon  header-icon" title="GitHub"></li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="flex-row pos-rel mt-1">
+    <nav class="sidebar-content pos-sticky-t0">
+      <h2 class="sidebar-title">Getting Started</h2>
+      <div class=" flex-col">
+        <a href="../../Docsite/installation.html" class="sidebar-item link text-regular-weight">Installation</a>
+      </div>
+      <h2 class="sidebar-title">Components</h2>
+      <div class=" flex-col sidebar-links">
+        <a href="../Alert/alert.html" class="sidebar-item link text-regular-weight">Alert</a>
+        <a href="../Avatar/avatar.html" class="sidebar-item link text-regular-weight">Avatar</a>
+        <a href="../Badge/badge.html" class="sidebar-item link text-regular-weight">Badge</a>
+        <a href="../Button/button.html" class="sidebar-item link text-regular-weight">Button</a>
+        <a href="../Card/card.html" class="sidebar-item link text-regular-weight">Card</a>
+        <a href="../Chips/chip.html" class="sidebar-item link text-regular-weight">Chip</a>
+        <a href="../Grid/grid.html" class="sidebar-item link text-regular-weight">Grid</a>
+        <a href="../Image/image.html" class="sidebar-item link text-regular-weight">Image</a>
+        <a href="../Input/input.html" class="sidebar-item link text-regular-weight">Input</a>
+        <a href="../List/list.html" class="sidebar-item link text-regular-weight">List</a>
+        <a href="../Navigation/navigation.html"
+          class="sidebar-item sidebar-item-focus link text-regular-weight">Navigation</a>
+        <a href="../Modal/modal.html" class="sidebar-item link text-regular-weight">Modal</a>
+        <a href="../Rating/rating.html" class="sidebar-item link text-regular-weight">Rating</a>
+        <a href="../Slider/slider.html" class="sidebar-item link text-regular-weight">Slider</a>
+        <a href="../Snackbar/snackbar.html" class="sidebar-item link text-regular-weight">Snackbar</a>
+        <a href="../Text/text.html" class="sidebar-item link text-regular-weight">Typography</a>
+      </div>
+      </div>
+    </nav>
+    <div class="content pos-rel">
+      <div class="nav-mob flex-row pos-sticky-t0">
+        <a href="../List/list.html" class="link   text-regular-weight">
+          <i class="fas fa-chevron-left"></i>
+          List
+        </a>
+        <a href="../Modal/modal.html" class="link   text-regular-weight ml-auto">
+          Modal
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <h1 class="content-title">Navigation</h1>
+      <p class="my-0-5">Navigation bar is used to navigate through the web apps or websites. This navigation component
+        is responsive. It is a hamburger menu in medium and small devices.</p>
+
+      <h3 class="content-title component-preview-heading">Example of Desktop Navigation</h3>
+      <div class="component-preview">
+        <nav class="header m-1">
+          <a class="link flex-row align-center primary-text" href="#">
+            <i class="fas fa-shipping-fast icon large-icon "></i>
+            <h1 class="header-heading">Swift Shipment</h1>
+          </a>
+          <ul class="header-nav-links flex-row gap-2">
+            <a href="#" class="link">
+              <li class="nav-link">Wishlist</li>
+            </a>
+            <a href="#" class="link">
+              <li class="nav-link">Cart</li>
+            </a>
+            <a href="#" class="link">
+              <li class="nav-link">About</li>
+            </a>
+            <a href="#" class="link">
+              <li class="nav-link">Account</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522header%2522%253E%250A%2520%2520%253Ca%2520class%253D%2522link%2520flex-row%2520align-center%2520primary-text%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shipping-fast%2520icon%2520large-icon%2520%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522header-heading%2522%253ESwift%2520Shipment%253C%252Fh1%253E%250A%2520%2520%253C%252Fa%253E%250A%2520%2520%253Cul%2520class%253D%2522header-nav-links%2520flex-row%2520gap-2%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253EWishlist%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253ECart%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253EAccount%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+      <h3 class="content-title component-preview-heading">Example of Responsive Navigation</h3>
+      <div class="component-preview" title="Change Screen Size To See In Action">
+        <nav class="header m-1">
+          <a class="link flex-row align-center primary-text" href="#">
+            <i class="fas fa-shipping-fast icon large-icon "></i>
+            <h1 class="header-heading">Swift Shipment</h1>
+          </a>
+          <ul class="header-nav-links flex-row gap-2 desktop-nav">
+            <a href="#" class="link">
+              <li class="nav-link">Wishlist</li>
+            </a>
+            <a href="#" class="link">
+              <li class="nav-link">Cart</li>
+            </a>
+            <a href="#" class="link">
+              <li class="nav-link">About</li>
+            </a>
+            <a href="#" class="link">
+              <li class="nav-link">Account</li>
+            </a>
+          </ul>
+          <ul class="header-nav-links mobile-nav">
+            <a href="#" class="link">
+              <li class="fas fa-bars icon medium-icon header-icon" title="nav-menu"></li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="code-display">
+        <code>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=793&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522header%2520m-1%2522%253E%250A%2520%2520%253Ca%2520class%253D%2522link%2520flex-row%2520align-center%2520primary-text%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shipping-fast%2520icon%2520large-icon%2520%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522header-heading%2522%253ESwift%2520Shipment%253C%252Fh1%253E%250A%2520%2520%253C%252Fa%253E%250A%2520%2520%253Cul%2520class%253D%2522header-nav-links%2520flex-row%2520gap-2%2520desktop-nav%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253EWishlist%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253ECart%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-link%2522%253EAccount%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%253Cul%2520class%253D%2522header-nav-links%2520mobile-nav%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522fas%2520fa-bars%2520icon%2520medium-icon%2520header-icon%2522%2520title%253D%2522nav-menu%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+            style="transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </code>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
