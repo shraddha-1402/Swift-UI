@@ -8,7 +8,47 @@
   display: none;
 }
 
-@media (max-width: 900px) {
+.nav-search-bar {
+  width: 16rem;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 0.25rem;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.nav-search-input,
+.nav-search-btn {
+  padding: 0.5rem;
+  font-size: 0.9em;
+  border-radius: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.nav-search-input {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.nav-search-btn {
+  color: var(--gray);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="search"].nav-search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.nav-search-input:focus,
+.nav-search-input:focus + .nav-search-btn {
+  background-color: var(--white);
+}
+
+@media (max-width: 1100px) {
   .desktop-nav {
     display: none;
   }
