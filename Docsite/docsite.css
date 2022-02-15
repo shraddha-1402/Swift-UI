@@ -1,7 +1,7 @@
 @import "../style.css";
 
-/* header css */
-.header {
+/* navbar css */
+.nav {
   padding: 0.5rem 1.5rem;
   background-color: var(--white);
   box-shadow: 2px 2px 3px var(--secondary-color),
@@ -12,17 +12,13 @@
   transition: all 0.5s ease;
 }
 
-.header-heading,
-.header-nav-links > li {
-  margin: 0.5rem;
+.nav-icon {
+  font-size: 1.5em;
+  color: var(--black);
+  transition: color 0.2s ease;
 }
 
-.header-nav-links {
-  margin-left: auto;
-  list-style: none;
-}
-
-.header-icon:hover {
+.nav-icon:hover {
   color: var(--primary-color);
   transition: all 0.2s ease;
 }
@@ -118,7 +114,7 @@
 }
 
 @media (max-width: 700px) {
-  .header {
+  .nav {
     padding: 0.5rem 0.5rem;
   }
 
