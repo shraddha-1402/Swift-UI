@@ -1,4 +1,4 @@
-@import "../../style.css";
+@import "/style.css";
 
 .nav-link:hover {
   text-decoration: underline var(--primary-color) 2px;
