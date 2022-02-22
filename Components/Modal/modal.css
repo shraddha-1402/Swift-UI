@@ -7,13 +7,12 @@
   justify-content: center;
   max-width: 24rem;
   padding: 1rem;
-  margin: 1rem;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--white);
-  box-shadow: 3px 3px 10px var(--gray);
+  border: 1px solid var(--gray);
   border-radius: 0.25rem;
 }
 
